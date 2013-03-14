@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>a24355b3-826e-4853-9da0-bf5c19de5200</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.0</TargetPlatformVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>SpaceGame_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="default.html" />
+    <Content Include="images\explosion_01.png" />
+    <Content Include="images\explosion_02.png" />
+    <Content Include="images\explosion_03.png" />
+    <Content Include="images\explosion_04.png" />
+    <Content Include="images\ic_launcher.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\missile_01.png" />
+    <Content Include="images\missile_02.png" />
+    <Content Include="images\shield_01.png" />
+    <Content Include="images\ship_01.png" />
+    <Content Include="images\ship_02.png" />
+    <Content Include="images\ship_03.png" />
+    <Content Include="images\smalllogo.png" />
+    <Content Include="images\splashscreen.png" />
+    <Content Include="images\stars_01.png" />
+    <Content Include="images\stars_02.png" />
+    <Content Include="images\stars_03.png" />
+    <Content Include="images\storelogo.png" />
+    <Content Include="js\default.js" />
+    <Content Include="css\default.css" />
+    <Content Include="js\hatchet\README.md" />
+    <Content Include="js\hatchet\src\component\AnimationComponent.js" />
+    <Content Include="js\hatchet\src\component\BoundComponent.js" />
+    <Content Include="js\hatchet\src\component\CollisionComponent.js" />
+    <Content Include="js\hatchet\src\component\CooldownComponent.js" />
+    <Content Include="js\hatchet\src\component\DebugComponent.js" />
+    <Content Include="js\hatchet\src\component\InputComponent.js" />
+    <Content Include="js\hatchet\src\component\LifetimeComponent.js" />
+    <Content Include="js\hatchet\src\component\RenderComponent.js" />
+    <Content Include="js\hatchet\src\component\SpatialComponent.js" />
+    <Content Include="js\hatchet\src\component\SpriteComponent.js" />
+    <Content Include="js\hatchet\src\component\VelocityComponent.js" />
+    <Content Include="js\hatchet\src\core\Component.js" />
+    <Content Include="js\hatchet\src\core\Entity.js" />
+    <Content Include="js\hatchet\src\core\EntityGroup.js" />
+    <Content Include="js\hatchet\src\core\Game.js" />
+    <Content Include="js\hatchet\src\core\Node.js" />
+    <Content Include="js\hatchet\src\core\System.js" />
+    <Content Include="js\hatchet\src\system\CollisionSystem.js" />
+    <Content Include="js\hatchet\src\system\InputSystem.js" />
+    <Content Include="js\hatchet\src\system\RenderSystem.js" />
+    <Content Include="js\hatchet\src\util\Animation.js" />
+    <Content Include="js\hatchet\src\util\ImageLoader.js" />
+    <Content Include="js\hatchet\src\util\List.js" />
+    <Content Include="js\hatchet\src\util\Map.js" />
+    <Content Include="js\hatchet\src\util\QuadTree.js" />
+    <Content Include="js\hatchet\src\util\QuadTreeNode.js" />
+    <Content Include="js\hatchet\src\util\Rect.js" />
+    <Content Include="js\hatchet\src\util\SortedList.js" />
+    <Content Include="js\hatchet\src\util\Vect.js" />
+    <Content Include="js\lib\require.js" />
+    <Content Include="js\require-config.js" />
+    <Content Include="js\space\src\AlienComponent.js" />
+    <Content Include="js\space\src\BackgroundComponent.js" />
+    <Content Include="js\space\src\EntityFactory.js" />
+    <Content Include="js\space\src\ExplosionComponent.js" />
+    <Content Include="js\space\src\LauncherComponent.js" />
+    <Content Include="js\space\src\PlayerComponent.js" />
+    <Content Include="js\space\src\ProjectileComponent.js" />
+    <Content Include="js\space\src\SpaceGame.js" />
+    <None Include="SpaceGame_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Invaders</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Game references -->
+    <link href="/css/default.css" rel="stylesheet" />
+
+    <style type="text/css">
+        @-ms-viewport {
+            height: 1102px;
+        }
+
+        body {
+            background-color: #000;
+            text-align: center;
+        }
+
+        #gameContainer {
+            background-color: #000;
+            border: 1px solid #111;
+        }
+    </style>
+
+    <script data-main="/js/require-config" src="/js/lib/require.js"></script>
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <canvas id="gameContainer" width="700" height="1100"></canvas>
+</body>
+</html>
